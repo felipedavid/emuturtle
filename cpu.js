@@ -1,3 +1,11 @@
+const Memory = new Uint8Array(0xFFFF);
+
+export class CPU {
+    constructor() {
+        this.registerFile = new RegisterFile();
+    }
+}
+
 export class RegisterFile {
     constructor() {
         /** @type {Uint16Array} */
